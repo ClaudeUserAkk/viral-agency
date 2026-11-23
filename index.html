@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viral Agency — Контент-завод для подкастов и экспертов</title>
+  <meta
+    name="description"
+    content="Превращаем подкасты и интервью в тысячи коротких роликов на сотнях аккаунтов в Instagram Reels и YouTube Shorts. 0 ₽ предоплаты — оплата только за результат."
+  />
+  <meta property="og:title" content="Viral Agency — Контент-завод для подкастов и экспертов" />
+  <meta
+    property="og:description"
+    content="Собственный софт для автомонтажа и дистрибуции в Instagram Reels и YouTube Shorts. 0 ₽ предоплаты — вы платите только за результат."
+  />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Viral Agency — на главную">
+        <span class="logo__mark"></span>
+        <span class="logo__text">VIRAL AGENCY</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#for-whom" class="nav__link">Для кого</a>
+        <a href="#tech" class="nav__link">Технология</a>
+        <a href="#math" class="nav__link">Математика</a>
+        <a href="#terms" class="nav__link">Условия</a>
+        <a href="#founder" class="nav__link">Основатель</a>
+      </nav>
+
+      <div class="header__actions">
+        <a
+          href="https://t.me/the_soller"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--white btn--sm"
+        >
+          Обсудить проект <span aria-hidden="true">→</span>
+        </a>
+        <button
+          class="burger"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="burger-btn"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu__inner">
+        <a href="#for-whom" class="mobile-menu__link">Для кого</a>
+        <a href="#tech" class="mobile-menu__link">Технология</a>
+        <a href="#math" class="mobile-menu__link">Математика</a>
+        <a href="#compare" class="mobile-menu__link">Сравнение</a>
+        <a href="#terms" class="mobile-menu__link">Условия</a>
+        <a href="#founder" class="mobile-menu__link">Основатель</a>
+        <div class="mobile-menu__cta">
+          <a
+            href="https://t.me/the_soller"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--white btn--full"
+          >
+            Написать в Telegram →
+          </a>
+          <a href="tel:+79101264730" class="mobile-menu__phone">+7 910 126-47-30</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__meta reveal">
+          <span class="status-pill">
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            INSTAGRAM REELS · YOUTUBE SHORTS · ОПЛАТА ЗА РЕЗУЛЬТАТ
+          </span>
+        </div>
+
+        <h1 class="hero__title reveal">
+          Превращаем подкасты и интервью в тысячи роликов на сотнях аккаунтов
+        </h1>
+
+        <p class="hero__subtitle reveal">
+          Контент-завод для бизнес-подкастеров и экспертов. Два собственных софта собирают ролики,
+          неотличимые от ручного монтажа, и сами выкладывают их в Reels и Shorts. Без предоплаты. Вы
+          платите только за результат.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a
+            href="https://t.me/the_soller"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--white btn--lg"
+          >
+            Написать в Telegram <span aria-hidden="true">→</span>
+          </a>
+          <a href="#tech" class="btn btn--outline btn--lg">
+            Как это работает
+          </a>
+        </div>
+
+        <div class="metrics-bar reveal" aria-label="Ключевые показатели системы">
+          <div class="metric-cell">
+            <div class="metric-cell__value">2&nbsp;000+</div>
+            <div class="metric-cell__label">уникальных роликов с одного подкаста</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-cell__value">1,5 мин</div>
+            <div class="metric-cell__label">на сборку одного ролика</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-cell__value">100+</div>
+            <div class="metric-cell__label">прогретых аккаунтов в работе</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-cell__value">0&nbsp;₽</div>
+            <div class="metric-cell__label">предоплаты на старте</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. For Whom -->
+    <section class="section" id="for-whom">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 / ДЛЯ КОГО</span>
+          <h2 class="section__title">Кому подходит контент-завод</h2>
+        </div>
+
+        <div class="cards-grid cards-grid--3">
+          <article class="card reveal">
+            <div class="card__num">01</div>
+            <h3 class="card__title">Бизнес-подкастеры</h3>
+            <p class="card__text">
+              У вас уже выходят часовые выпуски, но органика растёт медленно. Забираем длинное
+              видео и превращаем созданный контент в постоянный поток трафика из Reels и Shorts
+              полностью без вашего участия.
+            </p>
+            <div class="card__tag">Подкасты · Интервью · YouTube</div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__num">02</div>
+            <h3 class="card__title">Эксперты и предприниматели</h3>
+            <p class="card__text">
+              Выступаете на конференциях, ходите на чужие подкасты, строите личный бренд или ведёте
+              аудиторию на продукт. Мы масштабируем ваши сильные смыслы на широкие охваты и берём
+              оплату за лид.
+            </p>
+            <div class="card__tag">Личный бренд · Продукты · Воронки</div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__num">03</div>
+            <h3 class="card__title">Агентства и медиапроекты</h3>
+            <p class="card__text">
+              Подключаемся как технологический подрядчик. Запускаем нарезки и выкладку под ваши
+              бренды и клиентов — с понятной экономикой и реальными цифрами.
+            </p>
+            <div class="card__tag">Подряд · Пилоты · Медиасети</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technology (2 Softwares) -->
+    <section class="section section--bordered" id="tech">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 / ТЕХНОЛОГИЯ</span>
+          <h2 class="section__title">Два собственных софта вместо отдела монтажёров</h2>
+          <p class="section__desc">
+            Мы не собираем ролики в шаблонных сервисах. Вся цепочка, от поиска сильного фрагмента
+            до публикации на сотни аккаунтов, работает на нашем софте.
+          </p>
+        </div>
+
+        <div class="software-grid">
+          <article class="software-card reveal">
+            <div class="software-card__header">
+              <span class="mono-badge">СОФТ 01</span>
+              <span class="software-card__stat">1,5 мин · 0,1&nbsp;₽ / ролик</span>
+            </div>
+            <h3 class="software-card__title">Автомонтаж и уникализация</h3>
+            <ul class="check-list">
+              <li>Находит в длинном подкасте или интервью самые сильные моменты.</li>
+              <li>
+                <strong>Ролики неотличимы от человеческих:</strong> живая динамика, аккуратные
+                субтитры, смена планов и бодрый ритм — без ощущения, что ролик делала нейросеть.
+              </li>
+              <li>
+                <strong>Мультипликация:</strong> из одного сильного фрагмента делаем до 20
+                уникальных вариаций, а с одного выпуска выходит 2&nbsp;000–3&nbsp;000 роликов.
+              </li>
+              <li>Себестоимость сборки 0,1&nbsp;₽, поэтому мы можем работать без предоплаты.</li>
+            </ul>
+          </article>
+
+          <article class="software-card reveal">
+            <div class="software-card__header">
+              <span class="mono-badge">СОФТ 02</span>
+              <span class="software-card__stat">Reels + Shorts · без API</span>
+            </div>
+            <h3 class="software-card__title">Ферма прогретых аккаунтов</h3>
+            <ul class="check-list">
+              <li>Создаёт, прогревает и ведёт сотни аккаунтов в Instagram Reels и YouTube Shorts.</li>
+              <li>
+                Выкладывает видео <strong>через реальный интерфейс, а не по API</strong>. Поведение
+                повторяет живого пользователя.
+              </li>
+              <li>Меньше риск банов, а алгоритмы стабильно дают органические охваты.</li>
+              <li>Каждый ролик выходит сразу в Reels и Shorts, удваивая охваты.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- 4-step Pipeline -->
+        <div class="pipeline reveal" aria-label="Этапы работы">
+          <div class="pipeline__step">
+            <span class="pipeline__idx">01</span>
+            <span class="pipeline__name">Вы говорите свой запрос</span>
+            <span class="pipeline__desc">Мы берём ваши видео и контент</span>
+          </div>
+          <div class="pipeline__step">
+            <span class="pipeline__idx">02</span>
+            <span class="pipeline__name">Нарезка и уникализация</span>
+            <span class="pipeline__desc">2&nbsp;000–3&nbsp;000 роликов, неотличимых от ручного монтажа</span>
+          </div>
+          <div class="pipeline__step">
+            <span class="pipeline__idx">03</span>
+            <span class="pipeline__name">Дистрибуция 24/7</span>
+            <span class="pipeline__desc">Сотни прогретых аккаунтов в Reels и YouTube Shorts</span>
+          </div>
+          <div class="pipeline__step">
+            <span class="pipeline__idx">04</span>
+            <span class="pipeline__name">Оплата за результат</span>
+            <span class="pipeline__desc">Платите только за просмотры, подписчиков или лидов</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Math & Compound Effect -->
+    <section class="section section--bordered" id="math">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 / МАТЕМАТИКА ЗАЛЁТА</span>
+          <h2 class="section__title">Шанс залёта решает сложный процент, а не удача</h2>
+          <p class="section__desc">
+            Обычный подкастер выкладывает 20 роликов на один аккаунт и надеется, что повезёт с
+            алгоритмом. Контент-завод соединяет <strong>качество ручного монтажа</strong> и
+            <strong>масштаб в тысячи публикаций</strong>. Каждый новый выпуск наслаивается на
+            прошлые и разгоняет охват по принципу сложного процента.
+          </p>
+        </div>
+
+        <div class="math-layout reveal">
+          <!-- Left: Controls & Explanation -->
+          <div class="math-panel">
+            <div class="math-control">
+              <div class="math-control__top">
+                <label for="episodes-range" class="math-control__label">
+                  Длинных видео / подкастов в месяц
+                </label>
+                <output for="episodes-range" id="episodes-value" class="math-control__value">
+                  4 выпуска
+                </output>
+              </div>
+              <input
+                type="range"
+                id="episodes-range"
+                class="range-slider"
+                min="1"
+                max="8"
+                step="1"
+                value="4"
+              />
+              <div class="range-ticks" aria-hidden="true">
+                <span>1</span>
+                <span>2</span>
+                <span>4</span>
+                <span>6</span>
+                <span>8</span>
+              </div>
+            </div>
+
+            <div class="math-compare">
+              <div class="math-box math-box--muted">
+                <div class="math-box__eyebrow">ОБЫЧНАЯ НАРЕЗКА · 1–2 АККАУНТА</div>
+                <div class="math-box__num" id="classic-clips">100</div>
+                <div class="math-box__sub">роликов в месяц, линейный рост</div>
+              </div>
+              <div class="math-box math-box--accent">
+                <div class="math-box__eyebrow">VIRAL AGENCY · REELS + SHORTS</div>
+                <div class="math-box__num" id="viral-clips">8&nbsp;000</div>
+                <div class="math-box__sub">
+                  уникальных роликов в месяц · <span id="viral-posts">16&nbsp;000</span> публикаций на 2 площадках
+                </div>
+              </div>
+            </div>
+
+            <div class="math-principles">
+              <div class="principle">
+                <span class="principle__k">01</span>
+                <div>
+                  <strong>Качество на объёме.</strong> Дешёвый спам не работает, алгоритмы сразу
+                  режут удержание. Мы масштабируем сильные ролики, которые выглядят как ручной
+                  монтаж и держат внимание.
+                </div>
+              </div>
+              <div class="principle">
+                <span class="principle__k">02</span>
+                <div>
+                  <strong>Эффект сложного процента.</strong> Сотни аккаунтов прогреваются и копят
+                  библиотеку видео. Старые ролики продолжают собирать просмотры, пока выходят новые.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive SVG Chart -->
+          <div class="math-chart-card">
+            <div class="math-chart-card__head">
+              <span class="mono-badge">МОДЕЛЬ НАКОПЛЕНИЯ · 6 МЕСЯЦЕВ</span>
+              <span class="math-ratio" id="scale-ratio">×160 публикаций на 2 площадках</span>
+            </div>
+
+            <div class="chart-wrap">
+              <svg
+                id="compound-chart"
+                viewBox="0 0 520 360"
+                role="img"
+                aria-label="График накопления активных роликов и шанса залёта за 6 месяцев: Viral Agency против обычной нарезки"
+              >
+                <defs>
+                  <linearGradient id="viralFillGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Grid lines -->
+                <g class="chart-grid">
+                  <line x1="28" y1="28" x2="496" y2="28" />
+                  <line x1="28" y1="98" x2="496" y2="98" />
+                  <line x1="28" y1="168" x2="496" y2="168" />
+                  <line x1="28" y1="238" x2="496" y2="238" />
+                  <line x1="28" y1="308" x2="496" y2="308" />
+                </g>
+
+                <!-- Area under Viral curve -->
+                <path id="chart-area-viral" class="chart-area-viral" d="" />
+
+                <!-- Classic linear line -->
+                <path id="chart-line-classic" class="chart-line-classic" d="" />
+
+                <!-- Viral compound curve -->
+                <path id="chart-line-viral" class="chart-line-viral" d="" />
+
+                <!-- Dots & peak badge -->
+                <g id="chart-dots"></g>
+                <text id="chart-peak-label" class="chart-peak-label" x="492" y="20" text-anchor="end"></text>
+
+                <!-- X Axis Labels -->
+                <g class="chart-labels">
+                  <text x="28" y="338" text-anchor="start">Мес 1</text>
+                  <text x="121" y="338" text-anchor="middle">Мес 2</text>
+                  <text x="215" y="338" text-anchor="middle">Мес 3</text>
+                  <text x="308" y="338" text-anchor="middle">Мес 4</text>
+                  <text x="402" y="338" text-anchor="middle">Мес 5</text>
+                  <text x="496" y="338" text-anchor="end">Мес 6</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="chart-legend">
+              <div class="chart-legend__item">
+                <span class="legend-swatch legend-swatch--solid"></span>
+                <span>Viral Agency: сложный процент на 100+ аккаунтах</span>
+              </div>
+              <div class="chart-legend__item">
+                <span class="legend-swatch legend-swatch--dashed"></span>
+                <span>Обычная нарезка: 1–2 аккаунта</span>
+              </div>
+            </div>
+
+            <p class="chart-footnote">
+              Иллюстративная модель из расчёта около 2&nbsp;000 уникальных роликов с одного подкаста.
+              Итоговые просмотры зависят от ниши и самого контента.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Comparison Table -->
+    <section class="section section--bordered" id="compare">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">04 / СРАВНЕНИЕ</span>
+          <h2 class="section__title">Чем мы отличаемся от агентств и обычных AI-сервисов</h2>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Критерий</th>
+                <th>Классическое агентство</th>
+                <th>Простые AI-нарезчики</th>
+                <th class="is-featured">Viral Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="compare-table__key">Объём с 1 подкаста</td>
+                <td>10–30 роликов</td>
+                <td>20–50 шаблонных нарезок</td>
+                <td class="is-featured"><strong>2&nbsp;000–3&nbsp;000 уникальных роликов</strong></td>
+              </tr>
+              <tr>
+                <td class="compare-table__key">Дистрибуция</td>
+                <td>1–3 аккаунта вручную</td>
+                <td>Выкладываете сами</td>
+                <td class="is-featured"><strong>Сотни прогретых аккаунтов в Reels и Shorts</strong></td>
+              </tr>
+              <tr>
+                <td class="compare-table__key">Качество монтажа</td>
+                <td>Хорошее, но от 1&nbsp;000&nbsp;₽ за ролик</td>
+                <td>Выглядит шаблонно и дёшево</td>
+                <td class="is-featured"><strong>Неотличимо от живого монтажёра</strong></td>
+              </tr>
+              <tr>
+                <td class="compare-table__key">Риски и оплата</td>
+                <td>Фикс и предоплата без гарантий</td>
+                <td>Подписка без результата</td>
+                <td class="is-featured"><strong>0&nbsp;₽ предоплаты, платите за результат</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ========================================================================
+      РЕЗЕРВНЫЙ БЛОК: ПРИМЕРЫ РОЛИКОВ (9:16)
+      Когда появятся 2–3 готовых видео, раскомментируй секцию ниже и положи
+      файлы в папку ./videos/ (clip-1.mp4, clip-2.mp4, clip-3.mp4).
+      ========================================================================
+    <section class="section section--bordered" id="examples">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">ПРИМЕРЫ РАБОТ</span>
+          <h2 class="section__title">Как монтирует софт</h2>
+        </div>
+        <div class="reels-grid">
+          <div class="reel-card">
+            <video src="videos/clip-1.mp4" controls playsinline preload="metadata"></video>
+          </div>
+          <div class="reel-card">
+            <video src="videos/clip-2.mp4" controls playsinline preload="metadata"></video>
+          </div>
+          <div class="reel-card">
+            <video src="videos/clip-3.mp4" controls playsinline preload="metadata"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- 6. Terms (Inverted High-Contrast White Block) -->
+    <section class="section section--inverted" id="terms">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--dark">05 / УСЛОВИЯ РАБОТЫ</span>
+          <h2 class="section__title section__title--dark">
+            0&nbsp;₽ предоплаты.<br />Вы платите только за результат.
+          </h2>
+        </div>
+
+        <div class="terms-grid">
+          <article class="term-card reveal">
+            <div class="term-card__num">01</div>
+            <h3 class="term-card__title">Оплата по KPI</h3>
+            <p class="term-card__text">
+              Договариваемся о понятной цели. Для узнаваемости и личного бренда это просмотры, для
+              продуктов и воронок это подписчики и лиды.
+            </p>
+          </article>
+
+          <article class="term-card reveal">
+            <div class="term-card__num">02</div>
+            <h3 class="term-card__title">Без рисков на старте</h3>
+            <p class="term-card__text">
+              Вы не платите за часы монтажёров, серверы и настройку фермы аккаунтов. Мы зарабатываем
+              только тогда, когда контент приносит вам результат.
+            </p>
+          </article>
+
+          <article class="term-card reveal">
+            <div class="term-card__num">03</div>
+            <h3 class="term-card__title">Гибкие форматы</h3>
+            <p class="term-card__text">
+              Можно начать с тестового пилота, согласовать индивидуальные условия или поработать по
+              бартеру. Подберём удобный вариант под ваш проект.
+            </p>
+          </article>
+        </div>
+
+        <div class="terms-footer reveal">
+          <p class="terms-footer__note">
+            Ставки и формат работы считаем индивидуально под ваш контент. Напишите в Telegram.
+          </p>
+          <a
+            href="https://t.me/the_soller"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--black btn--lg"
+          >
+            Узнать условия в Telegram <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Founder -->
+    <section class="section" id="founder">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">06 / ОСНОВАТЕЛЬ</span>
+          <h2 class="section__title">Кто стоит за Viral Agency</h2>
+        </div>
+
+        <div class="founder-grid reveal">
+          <figure class="founder-photo">
+            <div class="founder-photo__frame">
+              <img
+                src="assets/founder.jpg?v=2"
+                alt="Артём Кокарев — основатель Viral Agency"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="founder-photo__caption">
+              <span>АРТЁМ КОКАРЕВ</span>
+              <span>@THE_SOLLER</span>
+            </figcaption>
+          </figure>
+
+          <div class="founder-grid__right">
+            <div class="founder-name">Артём Кокарев</div>
+            <div class="founder-role">Основатель Viral Agency · разработчик софта</div>
+            <p class="founder-bio">
+              Начинал монтажёром и нарезчиком коротких видео. Работал с проектом
+              <strong>«Послезавтра»</strong> на 3&nbsp;млн подписчиков и с
+              <strong>Михаилом Гребенюком</strong>.
+            </p>
+            <p class="founder-bio">
+              На практике разобрался, как работают удержание, темп и виральность. Потом перенёс эту
+              логику в собственный софт, чтобы делать такой же живой монтаж в тысячи раз быстрее и
+              дешевле.
+            </p>
+
+            <div class="founder-tags">
+              <span class="tag">Монтаж для «Послезавтра» и Гребенюка</span>
+              <span class="tag">2 собственных софта</span>
+              <span class="tag">15 лет</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Final CTA -->
+    <section class="section section--bordered cta-section">
+      <div class="container cta-box reveal">
+        <span class="eyebrow">СТАРТ</span>
+        <h2 class="cta-box__title">
+          Есть подкасты или длинные видео? Давайте запустим трафик.
+        </h2>
+        <p class="cta-box__text">
+          Пришлите ссылку на канал или выпуск в Telegram. Обсудим задачу, KPI и вариант старта.
+        </p>
+
+        <div class="cta-box__actions">
+          <a
+            href="https://t.me/the_soller"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--white btn--lg"
+          >
+            Написать @the_soller <span aria-hidden="true">→</span>
+          </a>
+          <button
+            type="button"
+            class="btn btn--outline btn--lg copy-btn"
+            data-copy="+7 910 126-47-30"
+          >
+            +7 910 126-47-30
+          </button>
+        </div>
+        <div class="copy-toast" id="copy-toast" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="logo">
+          <span class="logo__mark"></span>
+          <span class="logo__text">VIRAL AGENCY</span>
+        </div>
+        <div class="footer__sub">Instagram Reels &amp; YouTube Shorts</div>
+      </div>
+
+      <div class="footer__contacts">
+        <a
+          href="https://t.me/the_soller"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          Telegram: @the_soller
+        </a>
+        <a href="tel:+79101264730" class="footer__link">
+          +7 910 126-47-30
+        </a>
+      </div>
+
+      <div class="footer__copy">© 2026 Viral Agency</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
