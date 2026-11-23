@@ -35,6 +35,7 @@
         <a href="#for-whom" class="nav__link">Для кого</a>
         <a href="#tech" class="nav__link">Технология</a>
         <a href="#math" class="nav__link">Математика</a>
+        <a href="#examples" class="nav__link">Примеры</a>
         <a href="#terms" class="nav__link">Условия</a>
         <a href="#founder" class="nav__link">Основатель</a>
       </nav>
@@ -69,6 +70,7 @@
         <a href="#tech" class="mobile-menu__link">Технология</a>
         <a href="#math" class="mobile-menu__link">Математика</a>
         <a href="#compare" class="mobile-menu__link">Сравнение</a>
+        <a href="#examples" class="mobile-menu__link">Примеры</a>
         <a href="#terms" class="mobile-menu__link">Условия</a>
         <a href="#founder" class="mobile-menu__link">Основатель</a>
         <div class="mobile-menu__cta">
@@ -465,38 +467,154 @@
       </div>
     </section>
 
-    <!--
-      ========================================================================
-      РЕЗЕРВНЫЙ БЛОК: ПРИМЕРЫ РОЛИКОВ (9:16)
-      Когда появятся 2–3 готовых видео, раскомментируй секцию ниже и положи
-      файлы в папку ./videos/ (clip-1.mp4, clip-2.mp4, clip-3.mp4).
-      ========================================================================
+    <!-- 5.5 Examples (4 Showcase Reels) -->
     <section class="section section--bordered" id="examples">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow">ПРИМЕРЫ РАБОТ</span>
+          <span class="eyebrow">05 / ПРИМЕРЫ РАБОТ</span>
           <h2 class="section__title">Как монтирует софт</h2>
+          <p class="section__desc">
+            Четыре реальных ролика, собранных нашей системой. Включая два разных уникальных
+            варианта одного и того же момента — для публикации на разные аккаунты.
+          </p>
         </div>
+
         <div class="reels-grid">
-          <div class="reel-card">
-            <video src="videos/clip-1.mp4" controls playsinline preload="metadata"></video>
-          </div>
-          <div class="reel-card">
-            <video src="videos/clip-2.mp4" controls playsinline preload="metadata"></video>
-          </div>
-          <div class="reel-card">
-            <video src="videos/clip-3.mp4" controls playsinline preload="metadata"></video>
-          </div>
+          <article class="reel-item reveal">
+            <div class="reel-player" data-reel-player>
+              <video
+                src="videos/clip-1.mp4"
+                poster="videos/poster-1.jpg"
+                playsinline
+                preload="none"
+              ></video>
+              <button
+                type="button"
+                class="reel-cover"
+                aria-label="Воспроизвести ролик: Почему выручка не спасает бизнес?"
+              >
+                <span class="reel-cover__idx">01 / 04</span>
+                <span class="reel-cover__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <polygon points="7,4 20,12 7,20" />
+                  </svg>
+                </span>
+                <span class="reel-cover__hint">СМОТРЕТЬ</span>
+              </button>
+            </div>
+            <div class="reel-info">
+              <h3 class="reel-info__title">Почему выручка не спасает бизнес?</h3>
+              <p class="reel-info__desc">
+                Клиенты платят и хвалят продукт, а основатель всё равно докладывает из своего
+                кармана. Почему после первых денег нужно срочно добежать до первой прибыли — пока
+                не выгорел.
+              </p>
+            </div>
+          </article>
+
+          <article class="reel-item reveal">
+            <div class="reel-player" data-reel-player>
+              <video
+                src="videos/clip-2.mp4"
+                poster="videos/poster-2.jpg"
+                playsinline
+                preload="none"
+              ></video>
+              <button
+                type="button"
+                class="reel-cover"
+                aria-label="Воспроизвести ролик: Бизнес с нуля — плохой старт?"
+              >
+                <span class="reel-cover__idx">02 / 04</span>
+                <span class="reel-cover__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <polygon points="7,4 20,12 7,20" />
+                  </svg>
+                </span>
+                <span class="reel-cover__hint">СМОТРЕТЬ</span>
+              </button>
+            </div>
+            <div class="reel-info">
+              <h3 class="reel-info__title">Бизнес с нуля — плохой старт?</h3>
+              <p class="reel-info__desc">
+                Почему быстрее зайти младшим партнёром к сильному предпринимателю, чем пилить мелкий
+                проект в одиночку: за 2–3 года получаешь ментора, ресурсы, репутацию и прибыльное
+                направление.
+              </p>
+            </div>
+          </article>
+
+          <article class="reel-item reveal">
+            <div class="reel-player" data-reel-player>
+              <video
+                src="videos/clip-3.mp4"
+                poster="videos/poster-3.jpg"
+                playsinline
+                preload="none"
+              ></video>
+              <button
+                type="button"
+                class="reel-cover"
+                aria-label="Воспроизвести ролик: Почему бизнес не растёт без тебя?"
+              >
+                <span class="reel-cover__idx">03 / 04</span>
+                <span class="reel-cover__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <polygon points="7,4 20,12 7,20" />
+                  </svg>
+                </span>
+                <span class="reel-cover__hint">СМОТРЕТЬ</span>
+              </button>
+            </div>
+            <div class="reel-info">
+              <h3 class="reel-info__title">Почему бизнес не растёт без тебя?</h3>
+              <p class="reel-info__desc">
+                Выйти из операционки и ждать, что компания вырастет сама — иллюзия. В малом и
+                среднем бизнесе для стабильного роста нужен фаундер, который лично топит за
+                развитие.
+              </p>
+            </div>
+          </article>
+
+          <article class="reel-item reveal">
+            <div class="reel-player" data-reel-player>
+              <video
+                src="videos/clip-4.mp4"
+                poster="videos/poster-4.jpg"
+                playsinline
+                preload="none"
+              ></video>
+              <button
+                type="button"
+                class="reel-cover"
+                aria-label="Воспроизвести ролик: Иллюзия выхода из операционки"
+              >
+                <span class="reel-cover__idx">04 / 04</span>
+                <span class="reel-cover__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <polygon points="7,4 20,12 7,20" />
+                  </svg>
+                </span>
+                <span class="reel-cover__hint">СМОТРЕТЬ</span>
+              </button>
+            </div>
+            <div class="reel-info">
+              <h3 class="reel-info__title">Иллюзия выхода из операционки</h3>
+              <p class="reel-info__desc">
+                Без вовлечённого лидера бизнес в лучшем случае стоит на месте, а чаще — проседает.
+                Второй уникальный вариант того же момента для публикации на другой аккаунт.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    -->
 
     <!-- 6. Terms (Inverted High-Contrast White Block) -->
     <section class="section section--inverted" id="terms">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow eyebrow--dark">05 / УСЛОВИЯ РАБОТЫ</span>
+          <span class="eyebrow eyebrow--dark">06 / УСЛОВИЯ РАБОТЫ</span>
           <h2 class="section__title section__title--dark">
             0&nbsp;₽ предоплаты.<br />Вы платите только за результат.
           </h2>
@@ -551,7 +669,7 @@
     <section class="section" id="founder">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow">06 / ОСНОВАТЕЛЬ</span>
+          <span class="eyebrow">07 / ОСНОВАТЕЛЬ</span>
           <h2 class="section__title">Кто стоит за Viral Agency</h2>
         </div>
 

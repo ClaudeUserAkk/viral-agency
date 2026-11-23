@@ -162,6 +162,42 @@
   }
 
   // --------------------------------------------------------------------------
+  // Showcase Reel Players (clean playback with zero overlays)
+  // --------------------------------------------------------------------------
+  const reelPlayers = document.querySelectorAll('[data-reel-player]');
+
+  reelPlayers.forEach((player) => {
+    const video = player.querySelector('video');
+    const cover = player.querySelector('.reel-cover');
+    if (!video || !cover) return;
+
+    const activateAndPlay = () => {
+      // Pause any other playing reel
+      reelPlayers.forEach((other) => {
+        if (other === player) return;
+        const otherVideo = other.querySelector('video');
+        if (otherVideo && !otherVideo.paused) {
+          otherVideo.pause();
+        }
+      });
+
+      player.classList.add('is-active');
+      video.controls = true;
+      video.play().catch(() => {
+        // Fallback if browser blocks programmatic play: controls are already visible
+      });
+    };
+
+    cover.addEventListener('click', activateAndPlay);
+
+    video.addEventListener('ended', () => {
+      video.controls = false;
+      video.currentTime = 0;
+      player.classList.remove('is-active');
+    });
+  });
+
+  // --------------------------------------------------------------------------
   // Copy phone button
   // --------------------------------------------------------------------------
   const copyToast = document.getElementById('copy-toast');
